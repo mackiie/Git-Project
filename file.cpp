@@ -92,3 +92,13 @@ cout<<"\nRoom not found";
 getch();
 }
 }
+
+
+void Room::displayRoom(Room tempRoom)
+{
+cout<<"\nRoom Number: \t"<<tempRoom.roomNumber;
+cout<<"\nType AC/Non-AC (A/N) "<<tempRoom.ac;
+cout<<"\nType Comfort (S/N) "<<tempRoom.type;
+cout<<"\nType Size (B/S) "<<tempRoom.stype;
+cout<<"\nRent: "<<tempRoom.rent;
+}
