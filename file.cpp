@@ -229,6 +229,58 @@ getch();
 return;
 }
 
+
+cout<<"\nEnter booking id: ";
+cin>>rooms[i].cust.booking_id;
+
+cout<<"\nEnter Customer Name (First Name): ";
+cin>>rooms[i].cust.name;
+
+cout<<"\nEnter Address (only city): ";
+cin>>rooms[i].cust.address;
+
+cout<<"\nEnter Phone: ";
+cin>>rooms[i].cust.phone;
+
+cout<<"\nEnter From Date: ";
+cin>>rooms[i].cust.from_date;
+
+cout<<"\nEnter to  Date: ";
+cin>>rooms[i].cust.to_date;
+
+
+cout<<"\nEnter Advance Payment: ";
+cin>>rooms[i].cust.payment_advance;
+
+rooms[i].status=1;
+
+cout<<"\n Customer Checked-in Successfully..";
+getch();
+}
+}
+
+
+//hotel management shows available rooms
+void HotelMgnt::getAvailRoom()
+{
+int i,found=0;
+for(i=0;i<count;i++)
+{
+if(rooms[i].status==0)
+{
+displayRoom(rooms[i]);
+cout<<"\n\nPress enter for next room";
+found=1;
+getch();
+}
+}
+if(found==0)
+{
+cout<<"\nAll rooms are reserved";
+getch();
+}
+}
+
 //////Editting done
 
 
