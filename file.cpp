@@ -238,5 +238,19 @@ getch();
 }
 
 
+case 6:
+hm.guestSummaryReport();	
+break;
+case 7:
+cout<<"\nTHANK YOU! FOR USING SOFTWARE";
+break;
+default:
+cout<<"\nPlease Enter correct option";
+break;
+}
+}while(opt!=7);
+
+getch();
+}
 
 
