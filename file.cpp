@@ -13,7 +13,55 @@ public:
 char name[100];
 char address[100];
 char phone[12];
-char from_date[20];
+void setComplex(void)
+
+{
+
+cout << "Enter the real and imaginary parts : ";
+
+cin >> this->real;
+
+cin >> this->imag;
+
+}
+
+Complex add(const Complex& c)
+
+{
+
+Complex comp;
+
+comp.real = this->real + c.real;
+
+comp.imag = this->imag + c.imag;
+
+return comp;
+
+}
+
+Complex subtract(const Complex& c)
+
+{
+
+Complex comp;
+
+comp.real = this->real - c.real;
+
+comp.imag = this->imag - c.imag;
+
+return comp;
+
+}
+
+void printComplex(void)
+
+{
+
+cout << "Real : " << this->real << endl<< "Imaginary : " << this->imag << endl;
+
+}
+
+};char from_date[20];
 char to_date[20];
 float payment_advance;
 int booking_id;
@@ -193,4 +241,34 @@ cout<<"\n Customer Checked-in Successfully..";
 getch();
 }
 }
+int main()
+
+{
+
+Complex a, b, c, d;
+
+cout << "Setting first complex number " << endl;
+
+a.setComplex();
+
+cout << "Setting second complex number " << endl;
+
+b.setComplex();
+
+cout << "Addition of a and b : " << endl;
+
+c = a.add(b);
+
+c.printComplex();
+
+cout << "Subtraction of a and b : " << endl;
+
+d = a.subtract(b);
+
+d.printComplex();
+
+return 0;
+
+}
+
 
