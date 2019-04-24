@@ -266,3 +266,38 @@ void student::initialize()
   for(i=0; i<6; i++)
 
   {
+cin>>marks[i];
+
+  }
+
+}
+
+void fstudent::totavg(student & st1)
+
+{
+
+  int i,sum=0;
+
+  for(i=0; i<6; i++)
+
+  {
+
+    sum=sum+st1.marks[i];
+
+  }
+
+  st1.total=sum;
+
+  st1.avg=st1.total/6.0;
+
+}
+
+void fstudent::display(student st2)
+
+{
+
+  int i;
+
+  cout<<st2.number<<" "<<st2.name<<" ( ";
+
+  for(i=0; i<6; i++)
