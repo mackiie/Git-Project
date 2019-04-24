@@ -194,3 +194,75 @@ getch();
 }
 }
 
+
+int main()
+	
+
+{
+	
+
+Complex a, b, c, d;
+	
+
+cout << "Setting first complex number " << endl;
+	
+
+a.setComplex();
+	
+
+cout << "Setting second complex number " << endl;
+	
+
+b.setComplex();
+	
+
+cout << "Addition of a and b : " << endl;
+	
+
+c = a.add(b);
+	
+
+c.printComplex();
+	
+
+cout << "Subtraction of a and b : " << endl;
+	
+
+d = a.subtract(b);
+	
+
+d.printComplex();
+	
+
+return 0;
+	
+
+}
+
+class fstudent       // friend class
+
+{
+
+  public:
+
+    void totavg(student &);
+
+    void display(student);
+
+};
+
+void student::initialize()
+
+{
+
+  int i;
+
+ cout<<"Number: ";    cin>>number;
+
+  cout<<"Name: ";        cin>>name;
+
+  cout<<"Marks in 6 Subjects: ";
+
+  for(i=0; i<6; i++)
+
+  {
