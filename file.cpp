@@ -241,4 +241,34 @@ cout<<"\n Customer Checked-in Successfully..";
 getch();
 }
 }
+int main()
+
+{
+
+Complex a, b, c, d;
+
+cout << "Setting first complex number " << endl;
+
+a.setComplex();
+
+cout << "Setting second complex number " << endl;
+
+b.setComplex();
+
+cout << "Addition of a and b : " << endl;
+
+c = a.add(b);
+
+c.printComplex();
+
+cout << "Subtraction of a and b : " << endl;
+
+d = a.subtract(b);
+
+d.printComplex();
+
+return 0;
+
+}
+
 
