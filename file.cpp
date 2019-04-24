@@ -101,4 +101,21 @@ cout<<"\nType AC/Non-AC (A/N) "<<tempRoom.ac;
 cout<<"\nType Comfort (S/N) "<<tempRoom.type;
 cout<<"\nType Size (B/S) "<<tempRoom.stype;
 cout<<"\nRent: "<<tempRoom.rent;
+
 }
+//Editing done by Prashasti
+//Class Customer
+class Customer
+{
+public:
+char name[100];
+char address[100];
+char phone[12];
+char from_date[20];
+char to_date[20];
+float payment_advance;
+int booking_id;
+};
+
+
+
