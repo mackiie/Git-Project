@@ -183,4 +183,54 @@ void checkOut(int);
 void guestSummaryReport();
 };
 
+void HotelMgnt::guestSummaryReport(){
+
+if(count==0){
+	cout<<"\n No Guest in Hotel !!";
+}	
+for(int i=0;i<count;i++)
+{
+if(rooms[i].status==1)
+{
+cout<<"\n Customer First Name : "<<rooms[i].cust.name;
+cout<<"\n Room Number : "<<rooms[i].roomNumber;
+cout<<"\n Address (only city) : "<<rooms[i].cust.address;
+cout<<"\n Phone : "<<rooms[i].cust.phone;
+cout<<"\n---------------------------------------";	
+}
+	
+}
+
+getch();
+}
+
+//hotel management reservation of room
+void HotelMgnt::checkIn()
+{
+int i,found=0,rno;
+
+class Room room;
+cout<<"\nEnter Room number : ";
+cin>>rno;
+for(i=0;i<count;i++)
+{
+if(rooms[i].roomNumber==rno)
+{
+found=1;
+break;
+}
+}
+if(found==1)
+{
+if(rooms[i].status==1)
+{
+cout<<"\nRoom is already Booked";
+getch();
+return;
+}
+
 //////Editting done
+
+
+
+
