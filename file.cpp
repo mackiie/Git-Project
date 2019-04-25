@@ -477,3 +477,23 @@ class square
 
 };
 
+class circle
+
+{
+
+  float radius,p;
+
+     public:
+
+         float per1()
+
+{
+
+  radius=sqrt(314/3.14);
+
+  p=2*3.14*radius;
+
+  }
+
+};
+
