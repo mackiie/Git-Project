@@ -523,3 +523,76 @@ class triangle
 
 };
 
+ int main()
+
+{
+
+  
+
+ float rect,squa,circ,tri;
+
+  rectangle r1;
+
+  square s1;
+
+  circle c1;
+
+  triangle t1;
+
+  
+
+ 
+
+ rect=r1.per1();
+
+ squa=s1.per1();
+
+ circ=c1.per1();
+
+ tri=t1.per1();
+
+ 
+
+ if(rect>squa&&rect>tri&&rect>circ)
+
+    cout<<"\n rectangle has the largest perimeter";
+
+  else if(squa>rect&&squa>tri&&squa>circ)
+
+   cout<<"\n square has the largest perimeter";
+
+ else if(tri>rect&&tri>squa&&tri>circ)
+
+  cout<<"\n triangle has the largest perimeter";
+
+ else
+
+   cout<<"\n circle has the largest perimeter";
+
+ 
+
+ 
+
+ 
+
+ if(rect<squa&&rect<tri&&rect<circ)
+
+    cout<<"\n rectangle has the least perimeter";
+
+  else if(squa<rect&&squa<tri&&squa<circ)
+
+   cout<<"\n square has the least perimeter";
+
+ else if(tri<rect&&tri<squa&&tri<circ)
+
+  cout<<"\n triangle has the least perimeter";
+
+ else
+
+   cout<<"\n circle has the least perimeter";
+
+return 0;
+
+}
+
+
