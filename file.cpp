@@ -431,4 +431,26 @@ int main()
 
 }
 	
+class rectangle
 
+{
+
+ float l,b;
+
+ float p;
+
+  public: float per1()
+
+      {
+
+      l=4;
+
+      b=314/l;
+
+     p=2*(l+b);
+
+   return p;
+
+}
+
+};
