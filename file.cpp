@@ -595,4 +595,104 @@ return 0;
 
 }
 
+class Queue
+
+{
+
+ private:
+
+ int pushing_element;
+
+    int i;
+
+    int array[SIZE];
+
+    int front=0;
+
+    int rear=0;
+
+  public:
+
+    void push()
+
+    {
+
+      cout<<"Enter element to be pushed : ";
+
+      cin>>pushing_element;
+
+      if (rear==SIZE)
+
+      {
+
+        cout<<"Queue Overflow"<<endl<<endl;
+
+      }
+
+      else
+
+      {
+
+        array[rear]=pushing_element;
+
+        rear++;
+
+      }
+
+    }
+
+    void pop()
+
+    {
+
+      if(front==rear)
+
+      {
+
+        cout<<"Queue Underflow";
+
+      }
+
+      else
+
+      {
+
+        front++;
+
+      }
+
+    }
+
+    void display()
+
+    {
+
+      if (front == rear)
+
+      {
+
+        cout<<"Queue is empty";
+
+      }
+
+      else
+
+      {
+
+        cout<<"Queue is : ";
+
+        for(i=front;i<rear;i++)
+
+        {
+
+          cout<<array[i]<<" ";
+
+        }
+
+      }
+
+    }
+
+};
+
 
