@@ -454,3 +454,26 @@ class rectangle
 }
 
 };
+
+class square
+
+   {
+
+    float side,p;
+
+    public:
+
+      float per1()
+
+   {
+
+    side=sqrt(314);
+
+     p=4*side;
+
+    return p;
+
+     }
+
+};
+
