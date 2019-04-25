@@ -497,3 +497,29 @@ class circle
 
 };
 
+class triangle
+
+{
+
+ int hyp;
+
+ float side1, side2, p;
+
+ public: float per1()
+
+      {
+
+      hyp=2;
+
+     side1=(314*2)/hyp;
+
+     side2=sqrt((side1*side1)+(hyp*hyp));
+
+     p=side1+side2+hyp;
+
+   return p;
+
+}
+
+};
+
