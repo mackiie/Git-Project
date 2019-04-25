@@ -431,4 +431,362 @@ int main()
 
 }
 	
+class rectangle
+
+{
+
+ float l,b;
+
+ float p;
+
+  public: float per1()
+
+      {
+
+      l=4;
+
+      b=314/l;
+
+     p=2*(l+b);
+
+   return p;
+
+}
+
+};
+
+class square
+
+   {
+
+    float side,p;
+
+    public:
+
+      float per1()
+
+   {
+
+    side=sqrt(314);
+
+     p=4*side;
+
+    return p;
+
+     }
+
+};
+
+class circle
+
+{
+
+  float radius,p;
+
+     public:
+
+         float per1()
+
+{
+
+  radius=sqrt(314/3.14);
+
+  p=2*3.14*radius;
+
+  }
+
+};
+
+class triangle
+
+{
+
+ int hyp;
+
+ float side1, side2, p;
+
+ public: float per1()
+
+      {
+
+      hyp=2;
+
+     side1=(314*2)/hyp;
+
+     side2=sqrt((side1*side1)+(hyp*hyp));
+
+     p=side1+side2+hyp;
+
+   return p;
+
+}
+
+};
+
+ int main()
+
+{
+
+  
+
+ float rect,squa,circ,tri;
+
+  rectangle r1;
+
+  square s1;
+
+  circle c1;
+
+  triangle t1;
+
+  
+
+ 
+
+ rect=r1.per1();
+
+ squa=s1.per1();
+
+ circ=c1.per1();
+
+ tri=t1.per1();
+
+ 
+
+ if(rect>squa&&rect>tri&&rect>circ)
+
+    cout<<"\n rectangle has the largest perimeter";
+
+  else if(squa>rect&&squa>tri&&squa>circ)
+
+   cout<<"\n square has the largest perimeter";
+
+ else if(tri>rect&&tri>squa&&tri>circ)
+
+  cout<<"\n triangle has the largest perimeter";
+
+ else
+
+   cout<<"\n circle has the largest perimeter";
+
+ 
+
+ 
+
+ 
+
+ if(rect<squa&&rect<tri&&rect<circ)
+
+    cout<<"\n rectangle has the least perimeter";
+
+  else if(squa<rect&&squa<tri&&squa<circ)
+
+   cout<<"\n square has the least perimeter";
+
+ else if(tri<rect&&tri<squa&&tri<circ)
+
+  cout<<"\n triangle has the least perimeter";
+
+ else
+
+   cout<<"\n circle has the least perimeter";
+
+return 0;
+
+}
+
+class Queue
+
+{
+
+ private:
+
+ int pushing_element;
+
+    int i;
+
+    int array[SIZE];
+
+    int front=0;
+
+    int rear=0;
+
+  public:
+
+    void push()
+
+    {
+
+      cout<<"Enter element to be pushed : ";
+
+      cin>>pushing_element;
+
+      if (rear==SIZE)
+
+      {
+
+        cout<<"Queue Overflow"<<endl<<endl;
+
+      }
+
+      else
+
+      {
+
+        array[rear]=pushing_element;
+
+        rear++;
+
+      }
+
+    }
+
+    void pop()
+
+    {
+
+      if(front==rear)
+
+      {
+
+        cout<<"Queue Underflow";
+
+      }
+
+      else
+
+      {
+
+        front++;
+
+      }
+
+    }
+
+    void display()
+
+    {
+
+      if (front == rear)
+
+      {
+
+        cout<<"Queue is empty";
+
+      }
+
+      else
+
+      {
+
+        cout<<"Queue is : ";
+
+        for(i=front;i<rear;i++)
+
+        {
+
+          cout<<array[i]<<" ";
+
+        }
+
+      }
+
+    }
+
+};
+
+class Binary
+
+{
+
+  private:
+
+                              int num;
+
+                              int arr[50];
+
+                              int i;
+
+  public:
+
+                              void input()
+
+                              {
+
+                                             cout<<"Enter number to convert to binary (Must be greater than 0) : ";
+
+                                             cin>>num;
+
+                                             if(num<0)
+
+                                             {
+
+                                                            input();
+
+                                             }
+
+      else if(num==0)
+
+      {
+
+        i=0;
+
+        arr[i]=0;
+
+        i++;
+
+      }
+
+      else
+
+      {
+
+        convert();
+
+      }
+
+                              }
+
+                              void convert()
+
+                              {
+
+                                             i=0;
+
+                                             while(num>0)
+
+                                             {
+
+                                                            arr[i]=num%2;
+
+                                                            num=num/2;
+
+                                                            i++;
+
+                                             }
+
+                              }
+
+                              void display()
+
+                              {
+
+                                             cout<<"Binary No : ";
+
+                                             i--;
+
+                              while(i>=0)
+
+                                             {
+
+                                                            cout<<arr[i];
+
+                                                            i--;
+
+                                             }
+
+                              }
+
+};
+
 
